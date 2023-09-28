@@ -48,7 +48,7 @@ function attTable() {
 function attMF() {
     const mediaF = calcMF()
 
-    document.getElementById('mf-value').innerHTML = mediaF
+    document.getElementById('mf-value').innerHTML = mediaF.toFixed(2)
     document.getElementById('mf').innerHTML = mediaF >= notaMin ? spanApv : spanRpv
 }
 
